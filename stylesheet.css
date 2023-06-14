@@ -70,9 +70,10 @@ body{
     list-style: none;
 }
 
-.nav-sidebar ul{
+.nav-sidebar ul {
     padding-top: 15px;
-    /* overflow: hidden; text to be hidden inside its containing box */
+    overflow: hidden ; /*text to be hidden inside its containing box*/
+    visibility: hidden;
 
 }
 
@@ -87,4 +88,8 @@ body{
     font-size: 16px;
     white-space: nowrap; /*Keeps each heading on its own line.*/
     opacity: 0;
+}
+
+.nav-sidebar ul li a {
+    background-color: #222;
 }
