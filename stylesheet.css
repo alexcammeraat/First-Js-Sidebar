@@ -63,6 +63,7 @@ body{
     height: calc(100vh - 60px);
     background-color: #1b1b1b;
     z-index:1000;
+    transition: all 0.3s ease-in-out; /* to animate the js toggle*/
 }
 
 .nav-sidebar ul li{
@@ -88,9 +89,6 @@ body{
     font-family: arial;
     font-size: 16px;
     white-space: nowrap; /*Keeps each heading on its own line.*/
-   
-}
+    transition: all 0.3s ease-in-out; /* to animate the js toggle*/
 
-.nav-sidebar ul li a {
-    background-color: #222;
 }

@@ -8,7 +8,7 @@ let toggleNav = function() {
     if (toggleNavStatus === false) {
         getSidebarUl.style.visibility = "visible";
         getSidebarUl.style.opacity = "1";
-        getSidebar.style.width = "272px"; 
+        getSidebar.style.width = "350px"; 
         getSidebarTitle.style.opacity = "1";
 
         let arrayLenght = getSidebarLinks.lenght; 
@@ -16,5 +16,13 @@ let toggleNav = function() {
             getSidebarLinks[i].style.opacity = "1";
         }
         toggleNavStatus = true
+    }
+    else if (toggleNavStatus === true){
+        getSidebarUl.style.visibility = "hidden";
+        getSidebarUl.style.opacity = "0";
+        getSidebar.style.width = "50px";
+        getSidebarTitle.style.opacity = "0";
+
+        toggleNavStatus = false
     }
 }
